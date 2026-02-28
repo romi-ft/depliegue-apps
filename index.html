@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tarjeta de Presentación – Romina Fernández</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <style>
+    *,
+    *::before,
+    *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    :root {
+      --bg: #e0f2fe;
+      --card-bg: #ffffff;
+      --accent: #0ea5e9;
+      --badge-bg: #f0f9ff;
+      --badge-color: #0284c7;
+      --text-main: #1a1d2e;
+      --text-sub: #6b7280;
+      --border: #e5e7eb;
+    }
+
+    html,
+    body {
+      min-height: 100vh;
+      font-family: 'Inter', sans-serif;
+    }
+
+    body {
+      background-color: var(--bg);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 2rem;
+    }
+
+    .card {
+      background: var(--card-bg);
+      border-radius: 20px;
+      border: 1px solid var(--border);
+      padding: 3rem;
+      max-width: 460px;
+      width: 100%;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.07);
+    }
+
+    .card-header {
+      display: flex;
+      align-items: center;
+      gap: 1.1rem;
+      margin-bottom: 1.8rem;
+      padding-bottom: 1.8rem;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .avatar {
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, #a78bfa, #7c3aed);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.2rem;
+      font-weight: 700;
+      color: #fff;
+      flex-shrink: 0;
+      letter-spacing: -0.5px;
+    }
+
+    .header-text h1 {
+      font-size: 1.15rem;
+      font-weight: 700;
+      color: var(--text-main);
+    }
+
+    .header-text p {
+      font-size: 0.8rem;
+      color: var(--text-sub);
+      margin-top: 0.15rem;
+    }
+
+    .section {
+      margin-bottom: 1.5rem;
+    }
+
+    .section:last-of-type {
+      margin-bottom: 0;
+    }
+
+    .section-title {
+      font-size: 0.8rem;
+      font-weight: 600;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-bottom: 0.8rem;
+    }
+
+    .field {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0.5rem 0;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .field:last-of-type {
+      border-bottom: none;
+    }
+
+    .field-key {
+      font-size: 0.8rem;
+      color: var(--text-sub);
+    }
+
+    .field-value {
+      font-size: 0.8rem;
+      color: var(--text-main);
+      font-weight: 500;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="card">
+
+    <div class="card-header">
+      <div class="avatar">RF</div>
+      <div class="header-text">
+        <h1>Romina Fernández</h1>
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="section-title">Información del alumno</div>
+      <div class="field">
+        <span class="field-key">Nro estudiante</span>
+        <span class="field-value">373687</span>
+      </div>
+      <div class="field">
+        <span class="field-key">Nombre</span>
+        <span class="field-value">Romina Fernández</span>
+      </div>
+      <div class="field">
+        <span class="field-key">Grupo</span>
+        <span class="field-value">N15D</span>
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="section-title">Información de la instancia</div>
+      <div class="field">
+        <span class="field-key">Entorno</span>
+        <span class="field-value">Azure - GitHub</span>
+      </div>
+    </div>
+
+  </div>
+
+</body>
+
+</html>
